@@ -1,11 +1,16 @@
 // CUSTOMIZATIONS
 
 $elyse-project-color: #651B63;
+$alex-project-color: #3c2267;
 
 // add your project main color here:
 // $MYNAME-project-color: HEXVALUE;
 
+
 $ccarter-project-color: #91bec1;
+
+$daniel-project-color: #1EE8D4;
+
 
 
 // change the body background color on each page based on your name
@@ -14,11 +19,19 @@ $ccarter-project-color: #91bec1;
     @include readable($elyse-project-color); // this readable mixin is in color-test.scss. it determines what the font color should be based on your background color!
 }
 
+
 #ccarter {
     @include readable($ccarter-project-color); // this readable mixin is in color-test.scss. it determines what the font color should be based on your background color!
 }
 
-#alex {}
+
+#alex {
+    @include readable($alex-project-color);
+}
+
 
 #sartaj {}
 
+#daniel {
+	@include readable($daniel-project-color);
+}
